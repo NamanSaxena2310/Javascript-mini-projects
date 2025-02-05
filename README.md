@@ -1,1 +1,1 @@
-## This Repository contains all the projects i build while learning Javascript.
+## This Repository contains all the projects i built while learning Javascript.
