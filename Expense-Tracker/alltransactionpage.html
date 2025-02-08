@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Transactions</title>
+    <style>
+       
+  /* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+/* Container for the table */
+.table-container {
+    display: flex;
+    justify-content: center; /* Center the table horizontally */
+    margin-top: 20px; /* Add some space above the table */
+}
+
+/* Table styles */
+table {
+    border-collapse: collapse;
+    width: 100%; /* Set table width */
+    /* max-width: 800px;  */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Chart styles */
+canvas {
+    display: block; /* Ensure canvas is treated as a block element */
+    margin: 20px auto; /* Center the chart horizontally and add space above and below */
+    max-width: 80%; /* Limit maximum width */
+    max-height: 400px; /* Limit maximum height */
+}
+
+
+/* Delete button styles */
+.delete_btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.delete_btn:hover {
+    background-color: #d32f2f; /* Darken color on hover */
+}
+
+h2{
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <h1>User Transactions</h1>
+    <table id="transaction_table">
+        <thead>
+            <tr>
+                <th>Transaction Number</th>
+                <th>Type</th>
+                <th>Category</th>
+                <th>Date</th>
+                <th>Amount</th>
+                <th>Description</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="transaction_body">
+            
+        </tbody>
+    </table>
+
+    <h2>Income Vs Expenses Chart</h2>
+   
+    <canvas id="income_expenses_chart" width="400" height="200"></canvas>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="alltransaction.js"></script>
+</body>
+</html>
